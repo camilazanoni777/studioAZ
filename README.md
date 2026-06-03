@@ -22,11 +22,11 @@ npm run start
 
 ## Estrutura principal
 
-- `src/app`: rotas do App Router, layout global, paginas internas, sitemap e robots.
-- `src/components`: componentes reutilizaveis como header, footer, formulario, FAQ e depoimentos.
-- `src/lib`: configuracoes de conteudo, canais de contato e metadata/SEO.
+- `src/app`: rotas do App Router, layout global, páginas internas, sitemap e robots.
+- `src/components`: componentes reutilizáveis como header, footer, formulário, FAQ e depoimentos.
+- `src/lib`: configurações de conteúdo, canais de contato e metadados/SEO.
 - `public/images`: imagens placeholder geradas para substituir por fotos reais futuramente.
 
-## Integracoes futuras
+## Integrações futuras
 
-O formulario esta somente no frontend. Ele pode ser integrado depois com e-mail, CRM, planilha, automacao ou API propria.
+O formulário está somente no frontend. Ele pode ser integrado depois com e-mail, CRM, planilha, automação ou API própria.

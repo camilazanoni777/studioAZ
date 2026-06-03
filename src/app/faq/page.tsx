@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata(
   "Perguntas Frequentes",
-  "Perguntas e respostas sobre consultoria de arquitetura, interiores, reformas, acompanhamento de obra e orcamentos.",
+  "Perguntas e respostas sobre consultoria de arquitetura, interiores, reformas, acompanhamento de obra e orçamentos.",
   "/faq",
 );
 
@@ -18,12 +18,12 @@ export default function FAQPage() {
           <SectionHeading
             eyebrow="FAQ"
             title="Perguntas frequentes antes de iniciar seu projeto."
-            text="Reunimos as principais duvidas sobre formatos de atendimento, consultoria, prazos, orcamento e preparacao para a primeira conversa."
+            text="Reunimos as principais dúvidas sobre formatos de atendimento, consultoria, prazos, orçamento e preparação para a primeira conversa."
           />
           <FAQList />
         </div>
       </section>
-      <CTA title="Ainda ficou alguma duvida sobre o processo?" buttonLabel="Perguntar pelo WhatsApp" />
+      <CTA title="Ainda ficou alguma dúvida sobre o processo?" buttonLabel="Perguntar pelo WhatsApp" />
     </>
   );
 }

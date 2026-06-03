@@ -17,8 +17,8 @@ export default function DepoimentosPage() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Depoimentos"
-            title="Relatos de quem buscou uma transformacao conduzida com cuidado."
-            text="Os depoimentos abaixo sao placeholders com linguagem natural e refinada. Eles podem ser substituidos por avaliacoes reais, imagens de projeto e autorizacoes de uso."
+            title="Relatos de quem buscou uma transformação conduzida com cuidado."
+            text="Os depoimentos abaixo são placeholders com linguagem natural e refinada. Eles podem ser substituídos por avaliações reais, imagens de projeto e autorizações de uso."
           />
           <div className="mt-12">
             <TestimonialGrid />
@@ -29,8 +29,8 @@ export default function DepoimentosPage() {
       <section className="bg-sand px-5 py-20 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3">
           {[
-            ["Clareza", "Orientacao para decidir com mais seguranca durante todo o processo."],
-            ["Cuidado", "Atendimento proximo, com atencao ao contexto de cada familia."],
+            ["Clareza", "Orientação para decidir com mais segurança durante todo o processo."],
+            ["Cuidado", "Atendimento próximo, com atenção ao contexto de cada família."],
             ["Resultado", "Ambientes sofisticados, funcionais e coerentes com a vida real."],
           ].map(([title, text]) => (
             <article key={title} className="border-t border-gold pt-6">
@@ -41,7 +41,7 @@ export default function DepoimentosPage() {
         </div>
       </section>
 
-      <CTA title="Quer construir uma experiencia positiva para o seu projeto?" />
+      <CTA title="Quer construir uma experiência positiva para o seu projeto?" />
     </>
   );
 }

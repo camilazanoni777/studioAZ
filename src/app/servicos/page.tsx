@@ -7,8 +7,8 @@ import { pageMetadata } from "@/lib/seo";
 import { services, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata(
-  "Servicos de Arquitetura e Interiores",
-  "Consultoria, projetos de arquitetura, interiores, reformas, ambientacao e acompanhamento personalizado para residencias.",
+  "Serviços de Arquitetura e Interiores",
+  "Consultoria, projetos de arquitetura, interiores, reformas, ambientação e acompanhamento personalizado para residências.",
   "/servicos",
 );
 
@@ -18,9 +18,9 @@ export default function ServicosPage() {
       <section className="px-5 py-20 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1fr] lg:items-center">
           <SectionHeading
-            eyebrow="Servicos"
-            title="Solucoes para cada etapa da transformacao do seu espaco."
-            text="Da consultoria inicial ao acompanhamento personalizado, o atendimento e desenhado para oferecer clareza, sofisticacao e seguranca em cada decisao."
+            eyebrow="Serviços"
+            title="Soluções para cada etapa da transformação do seu espaço."
+            text="Da consultoria inicial ao acompanhamento personalizado, o atendimento é desenhado para oferecer clareza, sofisticação e segurança em cada decisão."
           />
           <PhotoPanel src="/images/services-interior.png" alt="Interior residencial sofisticado com cozinha e sala integradas" priority />
         </div>
@@ -50,7 +50,7 @@ export default function ServicosPage() {
               </div>
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="border-t border-gold pt-5">
-                  <h3 className="font-serif text-2xl text-charcoal">Para quem e indicado</h3>
+                  <h3 className="font-serif text-2xl text-charcoal">Para quem é indicado</h3>
                   <p className="mt-4 leading-7 text-muted">{service.indicatedFor}</p>
                 </div>
                 <div className="border-t border-gold pt-5">
@@ -72,7 +72,7 @@ export default function ServicosPage() {
 
       <CTA
         title="Vamos escolher o melhor formato para o seu momento?"
-        text="Uma primeira conversa ajuda a entender escopo, prioridades e o caminho mais adequado para transformar seu espaco."
+        text="Uma primeira conversa ajuda a entender escopo, prioridades e o caminho mais adequado para transformar seu espaço."
       />
     </>
   );

@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata(
   "Sobre o Studio Andrea Zanoni",
-  "Conheca a abordagem consultiva, humana e sofisticada do Studio Andrea Zanoni para arquitetura e interiores residenciais.",
+  "Conheça a abordagem consultiva, humana e sofisticada do Studio Andrea Zanoni para arquitetura e interiores residenciais.",
   "/sobre",
 );
 
@@ -21,8 +21,8 @@ export default function SobrePage() {
               Um studio para criar casas elegantes, acolhedoras e profundamente pessoais.
             </h1>
             <p className="mt-7 text-lg leading-8 text-muted">
-              O Studio Andrea Zanoni atua com arquitetura e interiores para familias que desejam transformar
-              seus espacos em lugares de presenca, conforto e identidade. Cada projeto comeca pela escuta:
+              O Studio Andrea Zanoni atua com arquitetura e interiores para famílias que desejam transformar
+              seus espaços em lugares de presença, conforto e identidade. Cada projeto começa pela escuta:
               entender quem mora, como vive, o que deseja preservar e o que precisa evoluir.
             </p>
           </div>
@@ -35,15 +35,15 @@ export default function SobrePage() {
           {[
             [
               "Atendimento personalizado",
-              "Cada familia recebe um olhar individual, com orientacoes coerentes com rotina, prioridades e estilo de vida.",
+              "Cada família recebe um olhar individual, com orientações coerentes com rotina, prioridades e estilo de vida.",
             ],
             [
               "Elegancia funcional",
-              "A estetica e pensada junto com conforto, circulacao, praticidade, iluminacao e uso real dos ambientes.",
+              "A estética e pensada junto com conforto, circulação, praticidade, iluminação e uso real dos ambientes.",
             ],
             [
-              "Experiencia consultiva",
-              "O processo aproxima o cliente das decisoes certas, com clareza, criterio e cuidado em cada etapa.",
+              "Experiência consultiva",
+              "O processo aproxima o cliente das decisões certas, com clareza, criterio e cuidado em cada etapa.",
             ],
           ].map(([title, text]) => (
             <article key={title} className="border-t border-gold pt-6">
@@ -58,17 +58,17 @@ export default function SobrePage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.75fr_1fr]">
           <SectionHeading
             eyebrow="Filosofia"
-            title="Ambientes devem refletir a identidade dos moradores, nao apenas uma tendencia."
+            title="Ambientes devem refletir a identidade dos moradores, não apenas uma tendência."
           />
           <div className="space-y-6 text-lg leading-9 text-muted">
             <p>
-              A casa de alto padrao nao e definida apenas por materiais nobres. Ela se revela na proporcao
-              correta, na fluidez da rotina, na sensacao de acolhimento e na capacidade de traduzir a historia
+              A casa de alto padrão não é definida apenas por materiais nobres. Ela se revela na proporção
+              correta, na fluidez da rotina, na sensação de acolhimento e na capacidade de traduzir a história
               de quem vive ali.
             </p>
             <p>
-              Por isso, o Studio Andrea Zanoni une estetica, funcionalidade e conforto em uma experiencia proxima,
-              consultiva e organizada. O resultado sao ambientes sofisticados sem excessos, pensados para viver
+              Por isso, o Studio Andrea Zanoni une estética, funcionalidade e conforto em uma experiência proxima,
+              consultiva e organizada. O resultado são ambientes sofisticados sem excessos, pensados para viver
               bem todos os dias.
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function SobrePage() {
       </section>
 
       <CTA
-        title="Sua casa pode expressar melhor quem voce e e como deseja viver."
+        title="Sua casa pode expressar melhor quem você e e como deseja viver."
         text="Uma conversa inicial ajuda a compreender o momento do projeto e o melhor formato de atendimento."
       />
     </>
