@@ -7,7 +7,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-line/80 bg-background/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <Logo />
-        <nav className="hidden items-center gap-7 text-sm text-charcoal lg:flex" aria-label="Navegacao principal">
+        <nav className="hidden items-center gap-7 text-sm text-charcoal lg:flex" aria-label="Navegação principal">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className="transition hover:text-gold focus-visible:text-gold">
               {item.label}
@@ -26,7 +26,7 @@ export function Header() {
       </div>
       <nav
         className="mx-auto flex max-w-7xl gap-3 overflow-x-auto px-5 pb-4 text-sm text-muted lg:hidden"
-        aria-label="Navegacao mobile"
+        aria-label="Navegação mobile"
       >
         {navItems.map((item) => (
           <Link

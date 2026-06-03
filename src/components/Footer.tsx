@@ -11,8 +11,8 @@ export function Footer() {
             <Logo />
           </div>
           <p className="mt-6 max-w-md text-sm leading-7 text-white/70">
-            Arquitetura e interiores com olhar personalizado para familias que desejam viver melhor em
-            espacos sofisticados, funcionais e atemporais.
+            Arquitetura e interiores com olhar personalizado para famílias que desejam viver melhor em
+            espaços sofisticados, funcionais e atemporais.
           </p>
         </div>
         <div>

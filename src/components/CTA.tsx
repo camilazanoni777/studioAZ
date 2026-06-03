@@ -10,7 +10,7 @@ type CTAProps = {
 
 export function CTA({
   eyebrow = "Atendimento personalizado",
-  title = "Vamos transformar seu espaco com intencao, beleza e seguranca.",
+  title = "Vamos transformar seu espaço com intenção, beleza e segurança.",
   text,
   buttonLabel = "Chamar no WhatsApp",
 }: CTAProps) {

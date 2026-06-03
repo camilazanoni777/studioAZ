@@ -17,7 +17,7 @@ export function LeadForm() {
     const message = String(formData.get("message") ?? "").trim();
 
     const whatsappMessage = [
-      "Ola, gostaria de solicitar atendimento com o Studio Andrea Zanoni.",
+      "Olá, gostaria de solicitar atendimento com o Studio Andrea Zanoni.",
       name ? `Nome: ${name}` : "",
       email ? `E-mail: ${email}` : "",
       phone ? `WhatsApp: ${phone}` : "",
@@ -34,7 +34,7 @@ export function LeadForm() {
   }
 
   return (
-    <form className="grid gap-4" aria-label="Formulario de captacao de leads" onSubmit={handleSubmit}>
+    <form className="grid gap-4" aria-label="Formulário de captação de leads" onSubmit={handleSubmit}>
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="grid gap-2 text-sm text-charcoal">
           Nome
@@ -87,7 +87,7 @@ export function LeadForm() {
           name="message"
           rows={4}
           className="resize-none border border-line bg-surface px-4 py-3 text-base text-charcoal"
-          placeholder="Conte brevemente sobre seu espaco, momento e objetivo."
+          placeholder="Conte brevemente sobre seu espaço, momento e objetivo."
         />
       </label>
       <button
@@ -100,7 +100,7 @@ export function LeadForm() {
         Ao enviar, abriremos uma conversa no WhatsApp com sua mensagem preenchida.
       </p>
       <p className="min-h-5 text-xs font-medium text-moss" aria-live="polite">
-        {submitted ? "Mensagem preparada no WhatsApp. Conclua o envio por la." : ""}
+        {submitted ? "Mensagem preparada no WhatsApp. Conclua o envio por lá." : ""}
       </p>
     </form>
   );

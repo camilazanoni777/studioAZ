@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site";
 export function WhatsAppButton() {
   return (
     <a
-      href={`https://wa.me/${siteConfig.whatsapp}?text=Ola,%20gostaria%20de%20conhecer%20os%20servicos%20do%20Studio%20Andrea%20Zanoni.`}
+      href={`https://wa.me/${siteConfig.whatsapp}?text=Ol%C3%A1,%20gostaria%20de%20conhecer%20os%20servi%C3%A7os%20do%20Studio%20Andrea%20Zanoni.`}
       target="_blank"
       rel="noreferrer"
       aria-label="Conversar pelo WhatsApp"

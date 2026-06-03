@@ -20,9 +20,9 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(20,20,19,0.78),rgba(20,20,19,0.36),rgba(20,20,19,0.18))]" />
-        <div className="relative mx-auto flex min-h-[86vh] max-w-7xl flex-col justify-end px-5 pb-16 pt-28 lg:px-8">
-          <div className="w-full max-w-[320px] min-w-0 sm:max-w-2xl md:max-w-3xl">
-            <p className="mb-5 text-sm font-medium text-white/78">Arquitetura e interiores de alto padrao</p>
+        <div className="relative mx-auto flex min-h-[86vh] max-w-7xl flex-col items-center justify-center px-5 py-28 text-center lg:px-8">
+          <div className="mx-auto w-full max-w-[320px] min-w-0 sm:max-w-2xl md:max-w-3xl">
+            <p className="mb-5 text-sm font-medium text-white/78">Arquitetura e interiores de alto padrão</p>
             <h1 className="sr-only">Andrea Zanoni Arquitetura + Interiores</h1>
             <Image
               src="/images/andrea-zanoni-logo-transparent.png"
@@ -30,17 +30,13 @@ export default function Home() {
               width={1400}
               height={270}
               priority
-              className="h-auto w-full max-w-[320px] sm:max-w-[520px] md:max-w-[720px]"
+              className="mx-auto h-auto w-full max-w-[320px] brightness-0 invert sm:max-w-[520px] md:max-w-[720px]"
             />
-            <p className="mt-7 max-w-[320px] text-lg leading-8 text-white/82 sm:max-w-2xl">
+            <p className="mx-auto mt-7 max-w-[320px] text-lg leading-8 text-white/82 sm:max-w-2xl">
               A arquitetura precisa fazer sentir, contar histórias e transformar espaços em cenário
               para uma vida com mais prazer, beleza e significado.
             </p>
-            <p className="mt-5 max-w-[320px] text-base leading-7 text-white/72 sm:max-w-2xl">
-              Projetos sofisticados, funcionais e personalizados para familias que desejam construir,
-              reformar ou transformar seus espacos com seguranca e bom gosto.
-            </p>
-            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
               <Link
                 href="/contato"
                 className="inline-flex justify-center bg-white px-6 py-4 text-sm font-semibold text-charcoal transition hover:bg-sand"
@@ -51,7 +47,7 @@ export default function Home() {
                 href="/servicos"
                 className="inline-flex justify-center border border-white/60 px-6 py-4 text-sm font-semibold text-white transition hover:bg-white hover:text-charcoal"
               >
-                Ver servicos
+                Ver serviços
               </Link>
             </div>
           </div>
@@ -62,7 +58,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-5 text-sm text-muted md:grid-cols-3">
           <p>Atendimento consultivo e personalizado</p>
           <p>Projetos para morar melhor, receber melhor e viver melhor</p>
-          <p>Arquitetura, interiores, reformas e ambientacao</p>
+          <p>Arquitetura, interiores, reformas e ambientação</p>
         </div>
       </section>
 
@@ -73,10 +69,10 @@ export default function Home() {
             <SectionHeading
               eyebrow="Sobre o studio"
               title="Um olhar refinado para casas que precisam refletir quem vive nelas."
-              text="O Studio Andrea Zanoni combina sensibilidade estetica, planejamento e escuta ativa para transformar desejos em ambientes elegantes, acolhedores e funcionais."
+              text="O Studio Andrea Zanoni combina sensibilidade estética, planejamento e escuta ativa para transformar desejos em ambientes elegantes, acolhedores e funcionais."
             />
             <div className="mt-9 grid gap-6 sm:grid-cols-2">
-              {["Curadoria de materiais", "Layout inteligente", "Acompanhamento proximo", "Decisoes com clareza"].map(
+              {["Curadoria de materiais", "Layout inteligente", "Acompanhamento próximo", "Decisões com clareza"].map(
                 (item) => (
                   <div key={item} className="border-l border-gold pl-5 text-sm font-medium text-charcoal">
                     {item}
@@ -91,9 +87,9 @@ export default function Home() {
       <section className="bg-surface px-5 py-24 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
-            eyebrow="Servicos"
-            title="Solucoes para cada etapa da transformacao do seu espaco."
-            text="Da consultoria pontual ao projeto completo, o atendimento e desenhado para reduzir duvidas, evitar escolhas desalinhadas e elevar o resultado final."
+            eyebrow="Serviços"
+            title="Soluções para cada etapa da transformação do seu espaço."
+            text="Da consultoria pontual ao projeto completo, o atendimento é desenhado para reduzir dúvidas, evitar escolhas desalinhadas e elevar o resultado final."
           />
           <div className="mt-12 grid gap-px bg-line md:grid-cols-2 lg:grid-cols-4">
             {services.map((service) => (
@@ -115,10 +111,10 @@ export default function Home() {
             />
             <div className="mt-10 space-y-7">
               {[
-                ["01", "Diagnostico", "Entendimento do momento, estilo de vida, objetivos e prioridades."],
-                ["02", "Direcao criativa", "Definicao de linguagem, materiais, layout e sensacao desejada."],
-                ["03", "Projeto e orientacao", "Entrega de solucoes visuais e tecnicas para guiar decisoes."],
-                ["04", "Acompanhamento", "Apoio para que a execucao mantenha coerencia com o projeto."],
+                ["01", "Diagnóstico", "Entendimento do momento, estilo de vida, objetivos e prioridades."],
+                ["02", "Direção criativa", "Definição de linguagem, materiais, layout e sensação desejada."],
+                ["03", "Projeto e orientação", "Entrega de soluções visuais e técnicas para guiar decisões."],
+                ["04", "Acompanhamento", "Apoio para que a execução mantenha coerência com o projeto."],
               ].map(([number, title, text]) => (
                 <div key={number} className="grid gap-4 border-t border-line pt-6 sm:grid-cols-[80px_1fr]">
                   <span className="font-serif text-3xl text-gold">{number}</span>
@@ -138,7 +134,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Depoimentos"
-            title="Experiencias conduzidas com cuidado, seguranca e atencao ao detalhe."
+            title="Experiências conduzidas com cuidado, segurança e atenção ao detalhe."
           />
           <div className="mt-12">
             <TestimonialGrid />
@@ -151,7 +147,7 @@ export default function Home() {
           <div>
             <SectionHeading
               eyebrow="Capte sua ideia"
-              title="Conte sobre o espaco que voce deseja transformar."
+              title="Conte sobre o espaço que você deseja transformar."
               text={`Prefere falar direto? Chame pelo WhatsApp ${siteConfig.whatsappDisplay}.`}
             />
           </div>

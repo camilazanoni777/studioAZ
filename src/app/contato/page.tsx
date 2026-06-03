@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata(
   "Contato",
-  "Fale com o Studio Andrea Zanoni pelo WhatsApp, Instagram, e-mail ou formulario para arquitetura e interiores.",
+  "Fale com o Studio Andrea Zanoni pelo WhatsApp, Instagram, e-mail ou formulário para arquitetura e interiores.",
   "/contato",
 );
 
@@ -20,7 +20,7 @@ export default function ContatoPage() {
             <SectionHeading
               eyebrow="Contato"
               title="Vamos conversar sobre o seu projeto?"
-              text="Compartilhe seu momento, o tipo de transformacao desejada e os primeiros detalhes do espaco. O studio entrara em contato para entender sua necessidade."
+              text="Compartilhe seu momento, o tipo de transformação desejada e os primeiros detalhes do espaço. O studio entrará em contato para entender sua necessidade."
             />
             <div className="mt-10 space-y-5 border-y border-line py-8 text-muted">
               <p>
@@ -49,7 +49,7 @@ export default function ContatoPage() {
             </div>
             <Link
               href={`https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(
-                "Ola, gostaria de conversar sobre um projeto com o Studio Andrea Zanoni.",
+                "Olá, gostaria de conversar sobre um projeto com o Studio Andrea Zanoni.",
               )}`}
               target="_blank"
               rel="noreferrer"
