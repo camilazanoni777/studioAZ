@@ -1,6 +1,40 @@
+"use client";
+
+import { type FormEvent, useState } from "react";
+import { siteConfig } from "@/lib/site";
+
 export function LeadForm() {
+  const [submitted, setSubmitted] = useState(false);
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const name = String(formData.get("name") ?? "").trim();
+    const email = String(formData.get("email") ?? "").trim();
+    const phone = String(formData.get("phone") ?? "").trim();
+    const interest = String(formData.get("interest") ?? "").trim();
+    const message = String(formData.get("message") ?? "").trim();
+
+    const whatsappMessage = [
+      "Ola, gostaria de solicitar atendimento com o Studio Andrea Zanoni.",
+      name ? `Nome: ${name}` : "",
+      email ? `E-mail: ${email}` : "",
+      phone ? `WhatsApp: ${phone}` : "",
+      interest ? `Tipo de projeto: ${interest}` : "",
+      message ? `Mensagem: ${message}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    const whatsappUrl = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    setSubmitted(true);
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  }
+
   return (
-    <form className="grid gap-4" aria-label="Formulario de captacao de leads">
+    <form className="grid gap-4" aria-label="Formulario de captacao de leads" onSubmit={handleSubmit}>
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="grid gap-2 text-sm text-charcoal">
           Nome
@@ -63,7 +97,10 @@ export function LeadForm() {
         Enviar solicitação
       </button>
       <p className="text-xs leading-6 text-muted">
-        A equipe entrara em contato para entender sua necessidade e orientar o melhor proximo passo.
+        Ao enviar, abriremos uma conversa no WhatsApp com sua mensagem preenchida.
+      </p>
+      <p className="min-h-5 text-xs font-medium text-moss" aria-live="polite">
+        {submitted ? "Mensagem preparada no WhatsApp. Conclua o envio por la." : ""}
       </p>
     </form>
   );
