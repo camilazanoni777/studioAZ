@@ -20,8 +20,8 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(20,20,19,0.78),rgba(20,20,19,0.36),rgba(20,20,19,0.18))]" />
-        <div className="relative mx-auto flex min-h-[86vh] max-w-7xl flex-col justify-end px-5 pb-16 pt-28 lg:px-8">
-          <div className="w-full max-w-[320px] min-w-0 sm:max-w-2xl md:max-w-3xl">
+        <div className="relative mx-auto flex min-h-[86vh] max-w-7xl flex-col items-center justify-center px-5 py-28 text-center lg:px-8">
+          <div className="mx-auto w-full max-w-[320px] min-w-0 sm:max-w-2xl md:max-w-3xl">
             <p className="mb-5 text-sm font-medium text-white/78">Arquitetura e interiores de alto padrao</p>
             <h1 className="sr-only">Andrea Zanoni Arquitetura + Interiores</h1>
             <Image
@@ -30,17 +30,13 @@ export default function Home() {
               width={1400}
               height={270}
               priority
-              className="h-auto w-full max-w-[320px] sm:max-w-[520px] md:max-w-[720px]"
+              className="mx-auto h-auto w-full max-w-[320px] brightness-0 invert sm:max-w-[520px] md:max-w-[720px]"
             />
-            <p className="mt-7 max-w-[320px] text-lg leading-8 text-white/82 sm:max-w-2xl">
+            <p className="mx-auto mt-7 max-w-[320px] text-lg leading-8 text-white/82 sm:max-w-2xl">
               A arquitetura precisa fazer sentir, contar histórias e transformar espaços em cenário
               para uma vida com mais prazer, beleza e significado.
             </p>
-            <p className="mt-5 max-w-[320px] text-base leading-7 text-white/72 sm:max-w-2xl">
-              Projetos sofisticados, funcionais e personalizados para familias que desejam construir,
-              reformar ou transformar seus espacos com seguranca e bom gosto.
-            </p>
-            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
               <Link
                 href="/contato"
                 className="inline-flex justify-center bg-white px-6 py-4 text-sm font-semibold text-charcoal transition hover:bg-sand"
